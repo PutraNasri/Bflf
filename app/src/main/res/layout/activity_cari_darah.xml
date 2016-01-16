@@ -12,7 +12,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText8"
+        android:id="@+id/editTextnama"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -23,33 +23,33 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText9"
+        android:id="@+id/editTextnohp"
         android:hint="No Handphone"
-        android:layout_below="@+id/editText8"
-        android:layout_alignRight="@+id/editText8"
-        android:layout_alignEnd="@+id/editText8"
+        android:layout_below="@+id/editTextnama"
+        android:layout_alignRight="@+id/editTextnama"
+        android:layout_alignEnd="@+id/editTextnama"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText10"
+        android:id="@+id/editTextalamat"
         android:hint="Alamat"
-        android:layout_below="@+id/editText9"
-        android:layout_alignRight="@+id/editText9"
-        android:layout_alignEnd="@+id/editText9"
+        android:layout_below="@+id/editTextnohp"
+        android:layout_alignRight="@+id/editTextnohp"
+        android:layout_alignEnd="@+id/editTextnohp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText11"
+        android:id="@+id/editTextgoldarah"
         android:hint="Golongan Darah yang di Butuhkan"
-        android:layout_below="@+id/editText10"
-        android:layout_alignRight="@+id/editText10"
-        android:layout_alignEnd="@+id/editText10"
+        android:layout_below="@+id/editTextalamat"
+        android:layout_alignRight="@+id/editTextalamat"
+        android:layout_alignEnd="@+id/editTextalamat"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:text="Tingkat Kebutuhan"
         android:id="@+id/textView2"
-        android:layout_below="@+id/editText11"
+        android:layout_below="@+id/editTextgoldarah"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="20dp" />
