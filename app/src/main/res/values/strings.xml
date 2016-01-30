@@ -1,8 +1,58 @@
 <resources>
-    <string name="app_name">Bflf</string>
+    <string name="app_name">BFLF</string>
+    <string name="app_menu">MENU</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
+    <string-array name="daerah">
+        <item>KOTA</item>
+        <item>BANDA ACEH</item>
+        <item>ACEH BESAR</item>
+        <item>LANGSA</item>
+        <item>ACEH BARAT</item>
+        <item>LHOKSEUMAWE</item>
+        <item>TAKENGON</item>
+        <item>MEULABOH</item>
+        <item>ACEH SELATAN</item>
+    </string-array>
+    <string-array name="kelamin">
+        <item>PRIA</item>
+        <item>WANITA</item>
+    </string-array>
+    <string-array name="kepentigan">
+        <item>TINGKAT KEPENTINGAN</item>
+        <item>TINGGI</item>
+        <item>SEDANG</item>
+        <item>RENDAH</item>
+    </string-array>
     <string name="action_settings">Settings</string>
+    <string name="home">
+        Darah merupakan salah satu cairan terpenting yang mengalir dalam tubuh manusia,jantung
+        memompakan darah keseluruh tubuh manusia yang melalui saraf dan pembuluh darah untuk
+        bisa manusia bergerak dan melakukan aktifitasnya. banyak penyakit seperti luka luar yang
+        membuat tubuh mengeluarkan banyak darah, sehingga jika terjadi kekurangan darah pada tubuh
+        manusia akan menyebabkan tubuh manusia tidak dapat melakukan aktifitas normal.
+        Banyak penyakit yang timbul pada tubuh manusia membuat orang yang sakit memerlukan
+        tambahan darah dari luar tubuh manusia, sehingga perlunya ada injeksi darah dari orang
+        lain dengan tipe dan resus darah yang sama,ketika darah diinjeksi ke tubuh manusia yang
+        membutuhkan tambahan darah atau dikenal dengan transfusi darah bisa membantu untuk meningkatkan
+        kembali sel darah merah bagi yang diinjeksi.
+        Transfusi darah menjadi salah satu trend hidup sehat dimana yang melakukan tranfusi atau donor
+        darah bisa menyehatkan pendonor darah, disamping membantu orang lain yang membutuhkan darah namun
+        sebagai ikatan sosial antar sesama manusia, dimana manusia merupakan makluk sosial yang harus
+        saling bantu membantu dalam menjalani kehidupan bermasyarakat.
+        Melihat tingginya permintaan donor darah dan jumlah darah yang tersedia belum bisa memenuhi,
+        perlu adanya peran aktif dari berbagai kalangan di Aceh untuk melakukan aksi donor darah sebagai
+        bagian tindakan sosial kemanusian membantu sesama. Ketika minat untuk mendonorkan darah sangat
+        kurang, pada 26 Desember 2010 terbentuk suatu komunitas yang mewadahi masyarakat yang ingin
+        mendonorkan darah baik yang bersifat cepat untuk sesama yang membutuhkan setiap saat.
+        Komunitas ini diberi nama Blood For Life Foundation (BFLF), komunitas mengumpulkan
+        data-data orang-orang yang bersedia mendonorkan darah ketika adanya kebutuhan yang
+        bersifat cepat (urgent), BFLF sendiri telah membuka cabang di beberapa Kabupaten/ Kota
+        di Banda Aceh diantaranya telah Resmi di buka BFLF Aceh Barat Daya, BFLF Sigli dan akan menyusul
+        beberapa BFLF lainnya. Walaupun bisa dikatakan Blood For Life Foundation (BFLF) melakukan
+        kegiatan dengan bantuan teman – teman sesama relawan yang peduli jadi dapat dikatakan hingga
+        saat ini BFLF suatu komunitas yang melakukan programnya secara sukarela tanpa kopensasi apapun juga.
+        Setelah berjalan hampir lebih 4 tahun pada 20 Desember 2014 Blood For Life Foundation terpilih
+        sebagai 5 besar Organisasi Sosial Berpretasi Tingkat Nasional 2014 di Jambi Oleh Menteri Sosial RI.</string>
 </resources>
