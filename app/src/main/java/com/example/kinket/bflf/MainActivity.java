@@ -1,9 +1,12 @@
 package com.example.kinket.bflf;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.KeyEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -85,7 +88,7 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, CariDarah.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-            Intent intent = new Intent(MainActivity.this, DonorDarah.class);
+            Intent intent = new Intent(MainActivity.this, Syarat.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
             Intent intent = new Intent(MainActivity.this, Lokasi.class);
@@ -96,9 +99,18 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, Saran.class);
             startActivity(intent);
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if ((keyCode == KeyEvent.KEYCODE_BACK)) {
+            //Log.d(this.getClass().getName(), "back button pressed");
+            //Toast.makeText(getApplicationContext(), "Tidak Bisa Back", Toast.LENGTH_LONG).show();
+            finish();
+
+        }
+            return super.onKeyDown(keyCode, event);
+        }
 }

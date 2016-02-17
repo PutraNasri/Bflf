@@ -32,7 +32,7 @@
         android:layout_alignEnd="@+id/editsaran"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="send"
+        android:onClick="kirim"
         android:src="@drawable/kirim"
         android:scaleType="fitXY" />
 
@@ -51,6 +51,17 @@
         android:text="Beri Saran "
         android:id="@+id/textView"
         android:layout_alignBottom="@+id/textViewResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+
+        android:src="@drawable/blff"
+        android:layout_above="@+id/textView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 

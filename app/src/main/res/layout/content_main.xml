@@ -10,40 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.kinket.bflf.MainActivity"
-    tools:showIn="@layout/app_bar_main">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView2"
-
-        android:background="@drawable/logo2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"
-        android:id="@+id/linearLayout">
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/scrollView2"
-            android:layout_gravity="center_horizontal" >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/home"
-                android:id="@+id/textView3"
-                android:textColor="#000000" />
-        </ScrollView>
-    </LinearLayout>
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/homm">
 
 
 </RelativeLayout>

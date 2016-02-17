@@ -1,9 +1,10 @@
 package com.example.kinket.bflf;
 
+import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Lokasi extends AppCompatActivity {
+public class Lokasi extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
