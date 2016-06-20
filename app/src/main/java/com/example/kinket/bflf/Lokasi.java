@@ -3,12 +3,10 @@ package com.example.kinket.bflf;
 import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.Activity;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -140,25 +138,11 @@ public class Lokasi extends Activity implements OnMapReadyCallback {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {
-            //Log.d(this.getClass().getName(), "back button pressed");
-            //Toast.makeText(getApplicationContext(), "Tidak Bisa Back", Toast.LENGTH_LONG).show();
-            android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Lokasi.this);
-            builder.setTitle("Anda Yakin Kembali Ke Menu?");
-            String[] pilihan = {"Ya", "Tidak"};
-            builder.setItems(pilihan, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int item) {
-                    switch(item){
-                        case 0 :
-                            Intent intent = new Intent(Lokasi.this, MainActivity.class);
+
+                            Intent intent = new Intent(Lokasi.this, Main2Activity.class);
                             startActivity(intent);
                             finish();
-                            break;
-                        case 1 :
-                            break;
-                    }
-                }
-            });
-            builder.create().show();
+
             return false;
         }
         return super.onKeyDown(keyCode, event);

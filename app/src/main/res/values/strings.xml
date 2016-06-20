@@ -5,21 +5,21 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string-array name="darah1">
-        <item>Golongan Darah yang Dibutuhkan</item>
+        <item>Golongan Darah yang Dibutuhkan *</item>
         <item>B</item>
         <item>A</item>
         <item>O</item>
         <item>AB</item>
     </string-array>
     <string-array name="darah2">
-        <item>Golongan Darah</item>
+        <item>Golongan Darah *</item>
         <item>B</item>
         <item>A</item>
         <item>O</item>
         <item>AB</item>
     </string-array>
     <string-array name="daerah">
-        <item>KOTA</item>
+        <item>KOTA *</item>
         <item>BANDA ACEH</item>
         <item>ACEH BESAR</item>
         <item>LANGSA</item>
@@ -29,18 +29,18 @@
         <item>ACEH SELATAN</item>
     </string-array>
     <string-array name="kelamin">
-        <item>Jenis Kelamin</item>
+        <item>Jenis Kelamin *</item>
         <item>PRIA</item>
         <item>WANITA</item>
     </string-array>
     <string-array name="kepentigan">
-        <item>TINGKAT KEPENTINGAN</item>
+        <item>TINGKAT KEPENTINGAN *</item>
         <item>TINGGI</item>
         <item>SEDANG</item>
         <item>RENDAH</item>
     </string-array>
     <string-array name="jumlahdarah">
-        <item>Jumlah Kebutuhan</item>
+        <item>Jumlah Kebutuhan *</item>
         <item>1 Kantong</item>
         <item>2 Kantong</item>
         <item>3 Kantong</item>

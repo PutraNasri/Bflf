@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -44,7 +45,7 @@ public class DonorDarah extends Activity {
 
         sp = (Spinner) findViewById(R.id.editTextgoldarah);
         List<String> item = new ArrayList<String>();
-        item.add("Golongan Darah");
+        item.add("Golongan Darah *");
         item.add("B");
         item.add("A");
         item.add("O");
@@ -122,7 +123,7 @@ public class DonorDarah extends Activity {
             alert.setTitle("Info");
             alert.show();
         }
-        else if(sp.getSelectedItem().toString().equals("Golongan Darah")){
+        else if(sp.getSelectedItem().toString().equals("Golongan Darah *")){
             AlertDialog.Builder a_builder = new AlertDialog.Builder(DonorDarah.this);
             a_builder.setMessage("Golongan Darah belum di pilih")
                     .setCancelable(false)
@@ -136,7 +137,7 @@ public class DonorDarah extends Activity {
             alert.setTitle("Info");
             alert.show();
         }
-        else if(sp2.getSelectedItem().toString().equals("KOTA")){
+        else if(sp2.getSelectedItem().toString().equals("KOTA *")){
             AlertDialog.Builder a_builder = new AlertDialog.Builder(DonorDarah.this);
             a_builder.setMessage("Daerah Kota Belum di Pilih")
                     .setCancelable(false)
@@ -150,7 +151,7 @@ public class DonorDarah extends Activity {
             alert.setTitle("Info");
             alert.show();
         }
-        else if(sp3.getSelectedItem().toString().equals("Jenis Kelamin")){
+        else if(sp3.getSelectedItem().toString().equals("Jenis Kelamin *")){
             AlertDialog.Builder a_builder = new AlertDialog.Builder(DonorDarah.this);
             a_builder.setMessage("Jenis Kelamin Belum di Pilih")
                     .setCancelable(false)
@@ -198,7 +199,7 @@ public class DonorDarah extends Activity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
-                            Intent hasilIntent = new Intent(DonorDarah.this, MainActivity.class);
+                            Intent hasilIntent = new Intent(DonorDarah.this, Main2Activity.class);
                             startActivity(hasilIntent);
                             finish();
                         }
@@ -270,7 +271,7 @@ public class DonorDarah extends Activity {
                 public void onClick(DialogInterface dialog, int item) {
                     switch(item){
                         case 0 :
-                            Intent intent = new Intent(DonorDarah.this, MainActivity.class);
+                            Intent intent = new Intent(DonorDarah.this, Main2Activity.class);
                             startActivity(intent);
                             finish();
                             break;

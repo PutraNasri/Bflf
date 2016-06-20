@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.kinket.bflf.DonorDarah">
+    tools:context="com.example.kinket.bflf.DonorDarah"
+    android:background="#f5bbbdd1">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,7 +23,18 @@
         android:layout_height="fill_parent"
         android:orientation="vertical"
         android:paddingTop="2dp">
-    <EditText
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Data Relawan "
+            android:id="@+id/textView41"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:id="@+id/editTextnama"
@@ -31,14 +43,15 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Nama Lengkap"
+        android:hint="  Nama Lengkap *"
         android:textAlignment="inherit"
-        android:textStyle="bold|italic"
-        android:background="#4c53dc"
-        android:textColor="#ffffffff"
-        android:textColorHint="#ffffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#ffffff"
+        android:background="#ffffff"
+        android:typeface="sans" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -47,57 +60,60 @@
         android:layout_below="@+id/editTextnama"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Alamat Tetap"
+        android:hint="  Alamat Tetap *"
         android:textAlignment="inherit"
-        android:textStyle="bold|italic"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginTop="5dp"
-        android:textColor="#ffffffff"
-        android:textColorHint="#ffffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#ffffff"
+        android:typeface="sans" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:id="@+id/editTextumur"
-        android:hint="Umur "
+        android:hint="  Umur *"
         android:layout_below="@+id/editTextgoldarah"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textAlignment="inherit"
-        android:textStyle="bold|italic"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginTop="5dp"
-        android:textColor="#ffffffff"
-        android:textColorHint="#ffffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginRight="10dp"
-        android:inputType="number" />
+        android:inputType="number"
+        android:backgroundTint="#ffffff"
+        android:typeface="sans" />
 
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="45dp"
         android:id="@+id/editTextnohp"
-        android:hint="No Handphone"
+        android:hint="  No Handphone *"
         android:layout_below="@+id/editTextalamat"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textAlignment="inherit"
-        android:textStyle="bold|italic"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginTop="5dp"
-        android:textColor="#ffffffff"
-        android:textColorHint="#ffffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:inputType="number" />
+        android:inputType="number"
+        android:backgroundTint="#ffffff"
+        android:typeface="sans" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -106,17 +122,18 @@
         android:layout_below="@+id/editTextnohp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Berat Badan"
+        android:hint="  Berat Badan *"
         android:textAlignment="inherit"
-        android:textStyle="bold|italic"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginTop="5dp"
-        android:textColor="#ffffffff"
-        android:textColorHint="#ffffffff"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
         android:layout_marginLeft="10dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#ffffff"
+        android:typeface="sans" />
 
 
         <Spinner
@@ -128,9 +145,10 @@
             android:layout_alignParentEnd="true"
             android:textAlignment="inherit"
             android:layout_marginTop="5dp"
-            android:background="#4c53dc"
+            android:background="#ffffff"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#ffffff" />
 
         <Spinner
         android:layout_width="fill_parent"
@@ -142,9 +160,10 @@
         android:layout_alignParentStart="true"
         android:textAlignment="inherit"
         android:layout_marginTop="5dp"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+            android:backgroundTint="#ffffff" />
 
         <Spinner
         android:layout_width="fill_parent"
@@ -156,25 +175,37 @@
         android:layout_alignParentStart="true"
         android:textAlignment="inherit"
         android:layout_marginTop="5dp"
-        android:background="#4c53dc"
+        android:background="#ffffff"
         android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp" />
+        android:layout_marginRight="10dp"
+            android:backgroundTint="#ffffff" />
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="45dp"
             android:id="@+id/editTextnik"
-            android:hint="NIK "
+            android:hint="  NIK *"
             android:textAlignment="inherit"
-            android:textStyle="bold|italic"
-            android:background="#4c53dc"
-            android:textColor="#ffffffff"
-            android:textColorHint="#ffffffff"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:inputType="number" />
+            android:inputType="number"
+            android:backgroundTint="#ffffff"
+            android:typeface="sans" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="*) Wajib di isi"
+            android:id="@+id/textView40"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <ImageButton
             style="?android:attr/buttonStyleSmall"

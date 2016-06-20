@@ -8,18 +8,41 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.kinket.bflf.Saran">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+    <LinearLayout
 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imageView3"
+            android:layout_alignParentTop="true"
+
+            android:src="@drawable/blff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/textViewResult" />
     <AutoCompleteTextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="180dp"
         android:id="@+id/editsaran"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="58dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:background="#cecece" />
+        android:background="#cecece"
+        android:hint="Beri Saran"
+        android:layout_marginTop="50dp" />
 
     <ImageButton
         style="?android:attr/buttonStyleSmall"
@@ -34,7 +57,8 @@
         android:layout_alignParentStart="true"
         android:onClick="kirim"
         android:src="@drawable/kirim"
-        android:scaleType="fitXY" />
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,25 +68,7 @@
         android:layout_above="@+id/editsaran"
         android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Beri Saran "
-        android:id="@+id/textView"
-        android:layout_alignBottom="@+id/textViewResult"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView3"
-        android:layout_alignParentTop="true"
-
-        android:src="@drawable/blff"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
+</LinearLayout>
+    </ScrollView>
 </RelativeLayout>

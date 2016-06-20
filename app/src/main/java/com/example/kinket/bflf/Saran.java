@@ -5,11 +5,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +23,6 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -94,7 +91,7 @@ public class Saran extends Activity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.cancel();
-                                Intent hasilIntent = new Intent(Saran.this, MainActivity.class);
+                                Intent hasilIntent = new Intent(Saran.this, Main2Activity.class);
                                 startActivity(hasilIntent);
                                 finish();
                             }
@@ -109,25 +106,11 @@ public class Saran extends Activity {
     }
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if ((keyCode == KeyEvent.KEYCODE_BACK)) {
-            //Log.d(this.getClass().getName(), "back button pressed");
-            //Toast.makeText(getApplicationContext(), "Tidak Bisa Back", Toast.LENGTH_LONG).show();
-            android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(Saran.this);
-            builder.setTitle("Anda Yakin Kembali Ke Menu?");
-            String[] pilihan = {"Ya", "Tidak"};
-            builder.setItems(pilihan, new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int item) {
-                    switch(item){
-                        case 0 :
-                            Intent intent = new Intent(Saran.this, MainActivity.class);
+
+                            Intent intent = new Intent(Saran.this, Main2Activity.class);
                             startActivity(intent);
                             finish();
-                            break;
-                        case 1 :
-                            break;
-                    }
-                }
-            });
-            builder.create().show();
+
             return false;
         }
         return super.onKeyDown(keyCode, event);
