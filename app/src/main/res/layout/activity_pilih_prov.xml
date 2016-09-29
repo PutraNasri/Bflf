@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kinket.bflf.pilih_prov"
+    android:background="#bcbed1">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f90202"
+        android:id="@+id/frameLayout14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFLF"
+            android:id="@+id/textView46"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f90202"
+        android:id="@+id/frameLayout15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFLF"
+            android:id="@+id/textView47"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/frameLayout16">
+
+        <Spinner
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_gravity="center_horizontal|top" />
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="PILIH"
+            android:id="@+id/button15"
+            android:layout_gravity="center"
+            android:backgroundTint="#1524f3"
+            android:textColor="#FFFFFF"
+            android:onClick="aceh" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="PILIH SESUAI PROVINSI"
+        android:id="@+id/textView57"
+        android:layout_above="@+id/frameLayout16"
+        android:layout_alignStart="@+id/frameLayout16"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

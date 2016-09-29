@@ -13,7 +13,9 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/textView3"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:id="@+id/scrollView5"
+        android:fillViewport="false">
     <LinearLayout
 
         android:layout_width="fill_parent"
@@ -21,9 +23,17 @@
         android:orientation="vertical"
         android:paddingTop="2dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="support by"
+            android:id="@+id/textView58"
+            android:layout_gravity="center_horizontal" />
+
         <ImageView
             android:layout_width="fill_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:id="@+id/imageView3"
             android:layout_alignParentTop="true"
 
@@ -31,36 +41,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignBottom="@+id/textViewResult" />
-    <AutoCompleteTextView
-        android:layout_width="fill_parent"
-        android:layout_height="180dp"
-        android:id="@+id/editsaran"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:background="#cecece"
-        android:hint="Beri Saran"
-        android:layout_marginTop="50dp" />
 
-    <ImageButton
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:text="send"
-        android:id="@+id/button3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/editsaran"
-        android:layout_alignEnd="@+id/editsaran"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="kirim"
-        android:src="@drawable/kirim"
-        android:scaleType="fitXY"
-        android:layout_marginTop="5dp" />
-
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
@@ -71,4 +53,26 @@
 
 </LinearLayout>
     </ScrollView>
+
+    <ImageButton
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="send"
+        android:id="@+id/button3"
+        android:onClick="kirim"
+        android:src="@drawable/kirim"
+        android:scaleType="fitXY"
+        android:layout_alignBottom="@+id/scrollView5"
+        android:layout_centerHorizontal="true" />
+
+    <AutoCompleteTextView
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:id="@+id/editsaran"
+        android:background="#cecece"
+        android:hint="Beri Saran"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

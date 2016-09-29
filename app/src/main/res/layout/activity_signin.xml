@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kinket.bflf.signin"
+    android:background="#bcbed1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editemail"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editpass"
+        android:hint="Password"
+        android:layout_below="@+id/editemail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPassword" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/button12"
+        android:onClick="login"
+        android:layout_below="@+id/editpass"
+        android:layout_alignLeft="@+id/editpass"
+        android:layout_alignStart="@+id/editpass"
+        android:layout_alignRight="@+id/editpass"
+        android:layout_alignEnd="@+id/editpass" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign UP"
+        android:id="@+id/button13"
+        android:layout_below="@+id/button12"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12"
+        android:layout_alignRight="@+id/button12"
+        android:layout_alignEnd="@+id/button12"
+        android:onClick="daftar" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f90202"
+        android:id="@+id/frameLayout8"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFLF"
+            android:id="@+id/textView56"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <TextView
+        android:text="nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button13"
+        android:layout_marginTop="186dp"
+        android:id="@+id/editnama"
+        android:layout_alignStart="@+id/button13"
+        android:layout_alignEnd="@+id/button13" />
+
+    <TextView
+        android:text="email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/email"
+        android:layout_below="@+id/editnama"
+        android:layout_alignStart="@+id/editnama"
+        android:layout_alignEnd="@+id/editnama" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button14"
+        android:onClick="out"
+        android:layout_below="@+id/button13"
+        android:layout_alignStart="@+id/button13"
+        android:layout_alignEnd="@+id/button13" />
+</RelativeLayout>

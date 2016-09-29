@@ -59,13 +59,13 @@ public class Saran extends Activity {
 
                 //InputStream is = null;
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-                nameValuePairs.add(new BasicNameValuePair("text", paramtext));
-                nameValuePairs.add(new BasicNameValuePair("tgl", paramtgl));
+                nameValuePairs.add(new BasicNameValuePair("isisaran", paramtext));
+                nameValuePairs.add(new BasicNameValuePair("tanggal", paramtgl));
 
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpPost httpPost = new HttpPost(
-                            "http://bflfadmin.esy.es/insert-saran.php");
+                            "http://cobabflf.esy.es/add_saaran.php");
                     httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
                     HttpResponse response = httpClient.execute(httpPost);
                     HttpEntity entity = response.getEntity();
@@ -81,8 +81,6 @@ public class Saran extends Activity {
                 Toast.makeText(getApplicationContext(), result, Toast.LENGTH_LONG).show();
                 TextView textViewResult = (TextView) findViewById(R.id.textViewResult);
                 textViewResult.setText("Inserted");
-
-
 
                 AlertDialog.Builder a_builder = new AlertDialog.Builder(Saran.this);
                 a_builder.setMessage("Terima Kasih Telah Memberi Saran Kepada Kami")

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.kinket.bflf.pilih_golongan"
+    android:background="#f5bbbdd1">
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f90202"
+        android:id="@+id/frameLayout18"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFLF"
+            android:id="@+id/textView60"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="on">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:onClick="onClick">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/foto2"
+                    android:layout_alignRight="@+id/Tnohp"
+                    android:layout_alignEnd="@+id/Tnohp"
+                    android:layout_marginRight="223dp"
+                    android:layout_marginEnd="223dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/drp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="GOLONGAN DARAH   &quot;O&quot;"
+                android:id="@+id/Tdaerah2"
+                android:textSize="20dp"
+                android:textColor="#f50505"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linearLayout2"
+                android:layout_toEndOf="@+id/linearLayout2"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="70 relawan"
+                android:id="@+id/textView2"
+                android:textSize="20dp"
+                android:textColor="#0651d4"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/linearLayout2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp"
+        android:layout_below="@+id/card_view2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/foto"
+                    android:layout_alignRight="@+id/Tnohp"
+                    android:layout_alignEnd="@+id/Tnohp"
+                    android:layout_marginRight="223dp"
+                    android:layout_marginEnd="223dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/drp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="GOLONGAN DARAH   &quot;A&quot;"
+                android:id="@+id/Tberat"
+                android:textSize="20dp"
+                android:textColor="#f50505"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/linearLayout"
+                android:layout_toEndOf="@+id/linearLayout"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="70 relawan"
+                android:id="@+id/textView50"
+                android:textSize="20dp"
+                android:textColor="#0651d4"
+                android:textStyle="bold"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f90202"
+        android:id="@+id/frameLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BFLF"
+            android:id="@+id/textView52"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+</RelativeLayout>
