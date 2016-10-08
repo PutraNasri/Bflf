@@ -60,7 +60,8 @@
         <activity android:name=".pilih_golongan" />
         <activity android:name=".signup" />
         <activity android:name=".signin" />
-        <activity android:name=".pilih_prov"></activity>
+        <activity android:name=".pilih_prov" />
+        <activity android:name=".profil"></activity>
     </application>
 
 </manifest>

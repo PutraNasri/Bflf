@@ -1,5 +1,6 @@
 package com.example.kinket.bflf;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -16,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class signin extends AppCompatActivity {
+public class signin extends Activity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private static final String TAG = "EmailPassword";
@@ -42,8 +43,8 @@ public class signin extends AppCompatActivity {
 
                 } else {
                     // User is signed out
-                    Nama.setText("");
-                    Email1.setText("");
+                  //  Nama.setText("");
+                   // Email1.setText("");
                     Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
                 // ...
@@ -85,28 +86,30 @@ public class signin extends AppCompatActivity {
                         Log.d(TAG, "signInWithEmail:onComplete:" + email + task.isSuccessful());
                         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                         if (user != null) {
+
+
+                            Intent intent = new Intent(signin.this, profil.class);
+                            startActivity(intent);
+                            finish();
+
                             // Name, email address, and profile photo Url
-                            String name = user.getDisplayName();
-                            String email = user.getEmail();
-                            String uid = user.getUid();
+                           // String name = user.getDisplayName();
+                           // String email = user.getEmail();
+                           // String uid = user.getUid();
                             //Uri photoUrl = user.getPhotoUrl();
 
                             // The user's ID, unique to the Firebase project. Do NOT use this value to
                             // authenticate with your backend server, if you have one. Use
                             // FirebaseUser.getToken() instead.
 
-                            Nama.setText(name);
-                            Email1.setText(email);
+                           // Nama.setText(name);
+                          //  Email1.setText(email);
 
-                          //  FirebaseDatabase database = FirebaseDatabase.getInstance();
-                          //  DatabaseReference myRef = database.getReference("user");
-                          //  myRef.setPriority(email);
+
 
                         }
 
-                        // If sign in fails, display a message to the user. If sign in succeeds
-                        // the auth state listener will be notified and logic to handle the
-                        // signed in user can be handled in the listener.
+
                         if (!task.isSuccessful()) {
                             Log.w(TAG, "signInWithEmail", task.getException());
                             Toast.makeText(signin.this, "Authentication failed.",

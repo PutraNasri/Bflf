@@ -44,7 +44,7 @@ public class Main2Activity extends Activity {
         finish();
     }
     public void grub (View view) {
-        Intent intent = new Intent(Main2Activity.this, signin.class);
+        Intent intent = new Intent(Main2Activity.this, profil.class);
        startActivity(intent);
        finish();
     }

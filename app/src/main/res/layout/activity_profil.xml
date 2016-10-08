@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kinket.bflf.profil">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/imageView"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:text="NAMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:id="@+id/editnama"
+        android:textSize="30sp"
+        android:layout_marginBottom="31dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Display Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:id="@+id/textView62"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Your Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView64"
+        android:textSize="18sp"
+        android:layout_below="@+id/editnamaa"
+        android:layout_alignStart="@+id/editnamaa"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:text="NAMA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editnamaa"
+        android:textSize="18sp"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:layout_below="@+id/textView62"
+        android:layout_alignStart="@+id/textView62" />
+
+    <Button
+        android:text="Change Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/button16"
+        android:layout_below="@+id/editemail"
+        android:layout_alignStart="@+id/editemail"
+        android:onClick="changepas" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button16"
+        android:layout_alignStart="@+id/button16"
+        android:layout_marginTop="18dp"
+        android:id="@+id/button17"
+        android:onClick="out" />
+
+    <TextView
+        android:text="Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:textColor="@color/cast_expanded_controller_background_color"
+        android:textSize="18sp"
+        android:id="@+id/editemail"
+        android:layout_below="@+id/textView64"
+        android:layout_alignStart="@+id/textView64" />
+</RelativeLayout>

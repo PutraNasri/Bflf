@@ -82,34 +82,4 @@
             android:textSize="20dp" />
     </FrameLayout>
 
-    <TextView
-        android:text="nama"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button13"
-        android:layout_marginTop="186dp"
-        android:id="@+id/editnama"
-        android:layout_alignStart="@+id/button13"
-        android:layout_alignEnd="@+id/button13" />
-
-    <TextView
-        android:text="email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/email"
-        android:layout_below="@+id/editnama"
-        android:layout_alignStart="@+id/editnama"
-        android:layout_alignEnd="@+id/editnama" />
-
-    <Button
-        android:text="Log Out"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/button14"
-        android:onClick="out"
-        android:layout_below="@+id/button13"
-        android:layout_alignStart="@+id/button13"
-        android:layout_alignEnd="@+id/button13" />
 </RelativeLayout>
